@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative; /* For centering the title */
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  transform: translateX(-50%);
+  margin-left: auto
+}
+
+.wallet-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto; /* Push buttons to the right */
+}
+
+/* Custom Wallet Button Styles */
+.wallet-adapter-button {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 10px 15px !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  transition: background-color 0.3s !important;
+}
+
+.wallet-adapter-button:hover {
+  background-color: #333333 !important;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: #000000 !important;
+}
+
+.wallet-adapter-dropdown-list {
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 4px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.wallet-adapter-dropdown-list-item {
+  color: #000000 !important;
+  font-size: 14px !important;
+}
+
+.wallet-adapter-dropdown-list-item:hover {
+  background-color: #f5f5f5 !important;
+}
+
+/* Airdrop Card */
+.airdrop-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-description {
+  color: #666666;
+  font-size: 14px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.alert-error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.alert-success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.alert-icon {
+  margin-right: 10px;
+}
+
+.alert-message h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.alert-message p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #000000;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.wallet-info {
+  font-size: 12px;
+  color: #666666;
+}
+
+.card-footer {
+  margin-top: 20px;
+}
+
+.request-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.request-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.request-button:hover:not(:disabled) {
+  background-color: #333333;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #f5f5f5;
+  margin-top: auto;
+}
